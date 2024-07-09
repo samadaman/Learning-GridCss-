@@ -1,0 +1,71 @@
+body{
+    background: #2c5df2;
+    background-image: url(/Vector.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.parent{
+    height: 100vh;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.group{
+    margin-bottom: 5%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+form input{
+    margin-top: 10%;
+    background-color: transparent;
+    border: none;
+    outline: 0;
+}
+.Finput{
+    border: 1px solid #fff;
+    width: 300px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+
+}
+.Linput{
+    margin-top: 10%;
+    width: 300px;
+    height: 40px;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+
+}
+input::placeholder{
+    color: #b2b1b1;
+}
+form img{
+    margin-left: 10px;
+}
+input{
+    position: relative;
+    bottom: 8px;
+    left: 10px;
+}
+button{
+    width: 300px;
+    margin-top: 10%;
+    height: 40px;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+}
+a{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    float: right;
+    margin-top: 3%;
+}

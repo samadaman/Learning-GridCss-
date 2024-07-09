@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)file:///C:/Users/admin/Downloads/flex.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout with grid</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./lady_files/css2" rel="stylesheet">
+  </head>
+  <body>
+    <style>
+        body{
+            box-sizing: border-box;
+            margin:0px;
+            font-family: 'Rubik', sans-serif;
+        }
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 100vh;
+      }
+      .bg {
+        background-image: url("https://images.unsplash.com/photo-1662856483669-b9a34c87f7d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+      .login_wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      form{
+        width: 300px;
+      }
+      .g-btn{
+        width: 100%;
+        padding: 10px;
+        background-color: white;
+        color: grey;
+        border-radius: 5px;
+        border: 1px solid gainsboro;
+        box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 6px rgb(0 0 0 / 1%);
+      }
+
+      .left{
+        float: left;
+      }
+      
+
+      .g-img{
+         width: 20px;
+         height: 20px;
+      }
+
+      .input_wrapper{
+        margin: 10px 0px 10px 0px;
+      }
+
+      .input_wrapper input{
+        width: 100%;
+        border: none;
+        border-bottom: 2px solid gainsboro;
+        outline: 0;
+        padding: 10px 4px 10px 0px;
+        box-sizing: border-box;
+      }
+
+      .login-btn{
+        width: 100%;
+        background-color: black;
+        border: 2px solid black;
+        outline: 0;
+        color: white;
+        padding: 10px;
+        border-radius: 8px;
+        margin-top:10px;
+        font-size: 15px;
+        text-transform: capitalize;
+      }
+      .input_footer{
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .input_footer span {
+        font-size: small;
+       margin-right: 10px;
+      }
+      
+      .input_footer a{
+        font-size: small;
+        color: black;
+
+      }
+      .flex-btn{
+        box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+      }
+      .flex-child{
+        text-transform: capitalize;
+      }
+      .flex-child a{
+        color:black;
+        text-decoration: none;
+      }
+      .flex-child img{
+        width: 19px;
+        margin-right: 8px;
+
+      }
+     /*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 381px) and (max-width: 767px) {
+  
+  .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+      }
+  
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  .grid-container {
+        display: grid;
+        grid-template-columns: 1fr ;
+      
+      }
+  
+}
+
+    </style>
+
+    <!--grid structuring--->
+
+    <div class="grid-container">
+      <div class="grid-child1">
+        <div class="login_wrapper">
+          <div class="flex-child">
+            <h1>Welcome Back, Olivia</h1>
+            <form>
+            <p>Welcome back! Please enter your details</p>
+         
+            <div class="flex-btn g-btn  ">
+                <div class="flex-child">
+                    <img src="./lady_files/google-logo.png">
+
+                </div>
+                <div class="flex-child">
+                    <a href="file:///C:/Users/admin/Downloads/flex.html#">Login with Gmail</a>
+                </div>
+            </div>
+
+                <div class="input_wrapper">
+                <input type="email" placeholder="Email">
+              </div>
+              <div class="input_wrapper">
+                <input type="password" placeholder="Password">
+              </div>
+              <div class="input_footer">
+                <input type="checkbox"><span>Remember for 30 days</span>
+                <a href="file:///C:/Users/admin/Downloads/flex.html#">Forgot password</a>
+              </div>
+              <button class="login-btn">log in</button>
+
+              <div class="input_footer">
+                <span>Don't have an account?</span><a href="file:///C:/Users/admin/Downloads/flex.html#">Sign up for free</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="grid-child bg"></div>
+    </div>
+  
+
+</body></html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>expand</title>
+  </head>
+  <body>
+    <style>
+      .parent{ 
+        height: 700px;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          grid-template-areas: "header header header header" "main main main sidebar" "footer footer footer footer";
+          background-color: antiquewhite;
+          justify-content: center;
+      }
+      .child1{
+          grid-area: header;
+          background-color: red;
+      }
+      .child2{
+          grid-area: main;
+          background-color: azure;
+      }
+    .child3{
+          grid-area: sidebar;
+          background-color: turquoise;
+      }
+      .child4{
+          grid-area: footer;
+        background-color: black;
+      }
+    </style>
+    <div class="parent">
+        <div class="child1">Header</div>
+        <div class="child2">Main</div>
+        <div class="child3">Aside</div>
+        <div class="child4">Footer</div>
+    </div>
+  </body>
+</html>
